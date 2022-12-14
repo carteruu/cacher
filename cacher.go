@@ -26,7 +26,7 @@ type (
 		// Set 保存
 		Set(ctx context.Context, key string, value interface{}, expire time.Duration) error
 		// Del 删除
-		Del(ctx context.Context, key string) error
+		Del(ctx context.Context, key ...string) error
 	}
 	// TypeConverter 类型转换器
 	TypeConverter struct {

@@ -415,7 +415,7 @@ func TestCache_Singleflight_Original(t *testing.T) {
 
 type repoOriginal struct{}
 
-func (r *repoOriginal) Del(ctx context.Context, key string) error {
+func (r *repoOriginal) Del(ctx context.Context, keys ...string) error {
 	panic("implement me")
 }
 

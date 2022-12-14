@@ -463,7 +463,7 @@ func TestCache_Singleflight_Bytes(t *testing.T) {
 
 type repoBytes struct{}
 
-func (r *repoBytes) Del(ctx context.Context, key string) error {
+func (r *repoBytes) Del(ctx context.Context, keys ...string) error {
 	panic("implement me")
 }
 

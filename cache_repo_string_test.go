@@ -448,7 +448,7 @@ func TestCache_Singleflight_String(t *testing.T) {
 
 type repoString struct{}
 
-func (r *repoString) Del(ctx context.Context, key string) error {
+func (r *repoString) Del(ctx context.Context, keys ...string) error {
 	panic("implement me")
 }
 
